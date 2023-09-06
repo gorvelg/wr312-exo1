@@ -27,6 +27,16 @@ h1 {
     max-width: 586px;
 }
 
+h3 {
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
 .button {
     background-color: #FFFFFF;
     padding: 16px;
@@ -39,11 +49,63 @@ h1 {
 section {
     padding: 0 150px;
 }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 169px;
+}
+.about h2 {
+    padding-top: 92px;
+}
 .about div{
     display: flex;
+    margin: 0 108px;
+}
+.about div:nth-child(3){
+    flex-direction: row-reverse;
 }
 
 .about img {
     width: 500px;
     border-radius: 50%;
+}
+
+.about h3 {
+    margin: 0 0 40px 0;
+}
+.side-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.industries {
+    background-color: #18302B;
+    color: #ffffff;
+}
+
+.industries h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+}
+
+.picto-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 98px 0;
+}
+.picto-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.picto-items div {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+.picto-row img {
+    width: 52px;
+    padding: 28px;
 }
