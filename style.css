@@ -39,3 +39,11 @@ h1 {
 section {
     padding: 0 150px;
 }
+.about div{
+    display: flex;
+}
+
+.about img {
+    width: 500px;
+    border-radius: 50%;
+}
