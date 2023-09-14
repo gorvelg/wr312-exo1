@@ -140,7 +140,30 @@ section {
     padding: 28px;
 }
 
-.third-row img {
+
+.third-row__img-box {
+    position: relative;
+    margin: 130px 0;
+}
+.third-row__img-box_img {
  width: 100%;
- margin: 130px 0;
+}
+.play-box {
+    position: absolute;
+    bottom: 44px;
+    left: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.play-box_img {
+    width: 46px;
+    margin-right: 16px;
+}
+
+.play-box_btn {
+    font-size: 24px;
+    font-family: Quicksand;
+    color: white;
+    font-weight: 500;
 }
