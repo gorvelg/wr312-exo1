@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+p, .picto-items span{
+    font-family: Quicksand, sans-serif, Arial;
+}
+
 header {
     display: flex;
     background: url(images/img_1.png) no-repeat center;
@@ -17,7 +21,7 @@ header div {
 }
 
 h1 {
-    font-family: Playfair Display;
+    font-family: PlayfairDisplay;
     font-size: 80px;
     font-weight: 800;
     line-height: 88px;
@@ -26,14 +30,23 @@ h1 {
     color: #FFFFFF;
     max-width: 586px;
 }
+h2 {
+    text-transform: uppercase;
+}
+h2, h3 {
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 46px;
+    
+}
 
 h3 {
-    font-family: Rubik;
     font-size: 40px;
     font-weight: 700;
     line-height: 44px;
     letter-spacing: 0em;
     text-align: left;
+    
 
 }
 
@@ -58,12 +71,14 @@ section {
 .about h2 {
     padding-top: 92px;
 }
-.about div{
-    display: flex;
-    margin: 0 108px;
+.about-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 108px;
+    margin-bottom: 100px;
 }
-.about div:nth-child(3){
-    flex-direction: row-reverse;
+.about-item:nth-child(3) .side-text{
+    grid-area: 1 / 1;
 }
 
 .about img {
@@ -76,20 +91,31 @@ section {
 }
 .side-text {
     display: flex;
+    width: 465px;
     flex-direction: column;
     justify-content: center;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 .industries {
     background-color: #18302B;
     color: #ffffff;
+    height: 492px;
 }
 
 .industries h2 {
     text-align: center;
     text-transform: uppercase;
     padding-top: 80px;
+    margin: 0;
 }
+
 
 .picto-row {
     display: flex;
@@ -105,7 +131,16 @@ section {
     background-color: #FFFFFF;
     border-radius: 50%;
 }
+.picto-items span {
+    margin-top: 42px;
+}
+
 .picto-row img {
     width: 52px;
     padding: 28px;
+}
+
+.third-row img {
+ width: 100%;
+ margin: 130px 0;
 }
