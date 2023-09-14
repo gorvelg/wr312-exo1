@@ -57,6 +57,7 @@ h3 {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
+    font-family: quicksand;
 }
 
 section {
@@ -84,6 +85,11 @@ section {
 .about img {
     width: 500px;
     border-radius: 50%;
+}
+
+.about img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .about h3 {
@@ -146,7 +152,8 @@ section {
     margin: 130px 0;
 }
 .third-row__img-box_img {
- width: 100%;
+    min-width: 300px;
+    max-width: 100%;
 }
 .play-box {
     position: absolute;
